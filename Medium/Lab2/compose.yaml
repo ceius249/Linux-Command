@@ -1,0 +1,12 @@
+# To run this: $ sudo docker compose up
+version: '3.8'
+services:
+  ubuntu1:
+    image: hieudaoquang291/medium-linux-command-2_ubuntu1:latest
+    container_name: ubuntu1
+    depends_on:
+      - ubuntu2
+
+  ubuntu2:
+    image: hieudaoquang291/medium-linux-command-2_ubuntu2:latest
+    container_name: ubuntu2
